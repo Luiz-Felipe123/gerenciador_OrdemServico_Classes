@@ -8,6 +8,7 @@ require_once ("../classes/Generica.class.php");
 $tabela = "cliente";
 $objCli = new Generica();
 $dados = $objCli->buscaDadoseditarPerfil($tabela,$_SESSION['cod_usu']);
+
 $nome = $dados["nome"];
 $email = $dados["email"];
 $endereco = $dados["endereco"];
