@@ -21,11 +21,11 @@
                 $this->codigo = $codigo;
                 $this->nome = $nome;
                 $this->email = $email;
-                $this->data = $endereco;
-                $this->data = $numero;
-                $this->data = $bairro;
-                $this->data = $cidade;
-                $this->data = $telefone;
+                $this->endereco = $endereco;
+                $this->numero = $numero;
+                $this->bairro = $bairro;
+                $this->cidade = $cidade;
+                $this->telefone = $telefone;
         
                 $query = $this->con->conectar()->prepare("SELECT * FROM cliente WHERE cod = ?");
                 $query->bindParam(1,$this->codigo);
