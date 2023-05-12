@@ -27,8 +27,8 @@
                     $query = $this->con->conectar()->prepare("UPDATE terceirizado SET nome = ?, email = ?, telefone = ? WHERE cod = ?");
                     $query->bindParam(1, $nome);
                     $query->bindParam(2, $email);
-                    $query->bindParam(7, $telefone);
-                    $query->bindParam(8, $codigo);
+                    $query->bindParam(3, $telefone);
+                    $query->bindParam(4, $codigo);
 
                     $retorno = $query->execute();//retorno boolean padrao TRUE
                     if($retorno){
